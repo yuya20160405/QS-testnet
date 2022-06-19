@@ -1,0 +1,46 @@
+## clone this repo
+git clone https://github.com/ingenuity-build/testnets ## this repo
+cd testnets/rhapsody
+
+## download and build quicksilverd and gaiad
+make init
+
+## show keys
+make keys
+
+## follow instructions listed to get funds from the faucet via discord
+
+## check balances
+make balances
+
+## start the validator
+make start
+
+## view the logs
+make logs
+
+## submit a create-validator tx to start validating (enter your validator name when prompted)
+make validate 
+
+## view validators
+make show-validators
+
+## view rewards
+make check-validator-rewards
+
+## view voting power
+make check-validator-voting-power
+
+---
+
+## reset state (sync from zero)
+make stop
+
+make reset
+
+---
+
+## clean up time! (post-testnet)
+make stop 
+
+make clean
